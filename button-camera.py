@@ -27,7 +27,7 @@ def my_callback(channel):
     camera.capture(fname)
     print('file {} saved'.format(fname))
 
-GPIO.add_event_detect(4, GPIO.FALLING, callback=my_callback, bouncetime=300)
+GPIO.add_event_detect(4, GPIO.FALLING, callback=my_callback, bouncetime=500)
 try:
     while(True):
         sleep(1)
