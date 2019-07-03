@@ -17,7 +17,8 @@ camera.start_preview()
 
 camera.annotate_text = "Hello world!"
 
-# sleep for at least 2 seconds before capturing, # to give the sensor time to set its light levels.
+# sleep for at least 2 seconds before capturing,
+# to give the sensor time to set its light levels.
 sleep(5)
 camera.capture('/home/pi/Desktop/image.jpg')
 
